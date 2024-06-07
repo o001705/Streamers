@@ -1,0 +1,25 @@
+pipeline:
+  name: My Harness Pipeline
+  stages:
+    - stage:
+        name: Build
+        type: Build
+        spec:
+          steps:
+            - step:
+                name: Build Step
+                type: Script
+                spec:
+                  shell: Bash
+                  command: echo "Building project..."
+    - stage:
+        name: Deploy
+        type: Deploy
+        spec:
+          steps:
+            - step:
+                name: Deploy Step
+                type: Script
+                spec:
+                  shell: Bash
+                  command: echo "Deploying project..."
