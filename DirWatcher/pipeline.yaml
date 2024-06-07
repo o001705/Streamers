@@ -1,5 +1,5 @@
 pipeline:
-  name: My Harness Pipeline
+  name: MyHarnessPipeline
   stages:
     - stage:
         name: Build
