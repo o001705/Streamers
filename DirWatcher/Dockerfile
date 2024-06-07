@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy the Java class files to the working directory
-COPY DirWatcherMain.class /app/
+COPY src/main/java/com/ravik/DirWatcherMain.class /app/
 
 # Specify the command to run the Java application
 CMD ["java", "DirWatcherMain"]
